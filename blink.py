@@ -11,9 +11,9 @@ while True:
     if button.value() == 0 and can_blink == True:
         for i in range(0, 2):
             led.value(1)
-            time.sleep(0.1)
+            time.sleep(0.075)
             led.value(0)
-            time.sleep(0.1)
+            time.sleep(0.075)
         can_blink = False
     else:
         led.value(0)
